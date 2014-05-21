@@ -1,4 +1,4 @@
-# mocha steps
+# mocha-step
 
 Global `step()` function, as a drop-in replacement for `it()`.
 
