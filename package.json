@@ -1,0 +1,21 @@
+{
+  "name": "mocha-steps",
+  "version": "0.0.1",
+  "description": "mocha steps",
+  "author": "Romain Prieto",
+  "license": "MIT",
+  "main": "lib/step.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rprieto/mocha-steps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rprieto/mocha-steps/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.19.0"
+  }
+}
