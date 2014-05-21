@@ -1,6 +1,6 @@
 require('../lib/step');
 
-describe('Step', function() {
+describe('step()', function() {
 
   describe('synchronous', function() {
 
@@ -61,5 +61,26 @@ describe('Step', function() {
 
   });
 
+  describe('async (exception in callback)', function() {
+
+    step('step 1', function(done) {
+      setTimeout(done, 50);
+    });
+
+    step('step 2', function(done) {
+      setTimeout(function() {
+        throw new Error('failed');
+      }, 50);
+    });
+
+    step('step 3', function(done) {
+      setTimeout(done, 50);
+    });
+
+    step('step 4', function(done) {
+      setTimeout(done, 50);
+    });
+
+  });
 
 });
