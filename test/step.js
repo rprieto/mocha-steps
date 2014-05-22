@@ -1,3 +1,5 @@
+var EventEmitter = require('events').EventEmitter;
+
 require('../lib/step');
 
 describe('step()', function() {
@@ -12,9 +14,6 @@ describe('step()', function() {
     });
 
     step('step 3', function() {
-    });
-
-    step('step 4', function() {
     });
 
   });
@@ -35,10 +34,6 @@ describe('step()', function() {
       setTimeout(done, 50);
     });
 
-    step('step 4', function(done) {
-      setTimeout(done, 50);
-    });
-
   });
 
   describe('async (exception)', function() {
@@ -52,10 +47,6 @@ describe('step()', function() {
     });
 
     step('step 3', function(done) {
-      setTimeout(done, 50);
-    });
-
-    step('step 4', function(done) {
       setTimeout(done, 50);
     });
 
@@ -77,10 +68,29 @@ describe('step()', function() {
       setTimeout(done, 50);
     });
 
-    step('step 4', function(done) {
-      setTimeout(done, 50);
+  });
+
+  describe('async (events)', function() {
+
+    var e = new EventEmitter();
+
+    step('step 1', function() {
+      setTimeout(function() {
+        e.emit('data', 'hello');
+      }, 50);
+    });
+
+    step('step 2', function(done) {
+      e.on('data', function() {
+        throw new Error('oh no');
+      });
+    });
+
+    step('step 3', function(done) {
+      setTimeout(done, 300);
     });
 
   });
+
 
 });
