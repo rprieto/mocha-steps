@@ -14,6 +14,9 @@ describe('my smoke test', function() {
 
   step('check my balance', function() {
   });
+  
+  xstep('temporarily ignored', function() {
+  });
 
 });
 ```
