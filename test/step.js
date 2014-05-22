@@ -92,5 +92,11 @@ describe('step()', function() {
 
   });
 
+  describe('ignored', function() {
+
+    xstep('is not executed', function() {
+    });
+
+  });
 
 });

@@ -90,4 +90,11 @@ describe('it()', function() {
 
   });
 
+  describe('ignored', function() {
+
+    xit('is not executed', function() {
+    });
+
+  });
+
 });
