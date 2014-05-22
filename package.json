@@ -1,8 +1,9 @@
 {
   "name": "mocha-steps",
   "version": "0.0.1",
-  "description": "mocha steps",
+  "description": "Sequential scenarios for Mocha",
   "author": "Romain Prieto",
+  "keywords": ["mocha", "step", "test", "bdd", "scenarios", "sequence"],
   "license": "MIT",
   "main": "lib/step.js",
   "scripts": {

@@ -1,6 +1,16 @@
-# mocha-step
+# mocha-steps
 
-Global `step()` function, as a drop-in replacement for `it()`.
+> Sequential scenarios for Mocha
+
+Global `step()` function, as a drop-in replacement for `it()`. Any failing `step` will abort the parent `describe` immediately. This is handy for BDD-like scenarios, or smoke tests that need to run through specific steps.
+
+### Setup
+
+[![NPM](https://nodei.co/npm/mocha-steps.png?compact=true)](https://nodei.co/npm/mocha-steps/)
+
+Then simply run mocha with `--require mocha-steps`.
+
+### Example
 
 ```js
 describe('my smoke test', function() {
@@ -21,9 +31,7 @@ describe('my smoke test', function() {
 });
 ```
 
-Any failing `step` will abort the parent `describe` immediately. This is handy for BDD-like scenarios, or smoke tests that need to run through specific steps.
-
-**With the standard it()**
+- With the standard it()
 
 ```
 my smoke test
@@ -32,7 +40,7 @@ my smoke test
    ✓ check my balance
 ```
 
-**Using step()**
+- Using step()
 
 ```
 my smoke test
@@ -42,5 +50,5 @@ my smoke test
 
 ### Notes
 
-- Unlike the `--bail` option, the rest of the test suite will run normally.
+- Unlike Mocha's `--bail` option, the rest of the test suite will run normally.
 - `step()` works with both synchronous and async tests.
