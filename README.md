@@ -51,4 +51,4 @@ my smoke test
 ### Notes
 
 - Unlike Mocha's `--bail` option, the rest of the test suite will run normally.
-- `step()` works with both synchronous and async tests.
+- `step()` works with synchronous, async, and promise tests.

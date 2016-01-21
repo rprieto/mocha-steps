@@ -3,7 +3,14 @@
   "version": "0.0.1",
   "description": "Sequential scenarios for Mocha",
   "author": "Romain Prieto",
-  "keywords": ["mocha", "step", "test", "bdd", "scenarios", "sequence"],
+  "keywords": [
+    "mocha",
+    "step",
+    "test",
+    "bdd",
+    "scenarios",
+    "sequence"
+  ],
   "license": "MIT",
   "main": "lib/step.js",
   "scripts": {
@@ -17,6 +24,6 @@
     "url": "https://github.com/rprieto/mocha-steps/issues"
   },
   "devDependencies": {
-    "mocha": "~1.19.0"
+    "mocha": "^2.3.4"
   }
 }

@@ -95,6 +95,29 @@ describe('it()', function() {
     xit('is not executed', function() {
     });
 
+    it('is not executed');
+
   });
 
+  describe('promise', function() {
+
+    it('step 1', function() {
+      return new Promise(function(resolve, reject) {
+        setTimeout(resolve, 50);
+      });
+    });
+
+    it('step 2', function() {
+      return new Promise(function(resolve, reject) {
+        setTimeout(reject, 50);
+      });
+    });
+
+    it('step 3', function() {
+      return new Promise(function(resolve, reject) {
+        setTimeout(resolve, 50);
+      });
+    });
+
+  });
 });

@@ -97,6 +97,30 @@ describe('step()', function() {
     xstep('is not executed', function() {
     });
 
+    step('is not executed');
+
+  });
+
+  describe('promise', function() {
+
+    step('step 1', function() {
+      return new Promise(function(resolve, reject) {
+        setTimeout(resolve, 50);
+      });
+    });
+
+    step('step 2', function() {
+      return new Promise(function(resolve, reject) {
+        setTimeout(reject, 50);
+      });
+    });
+
+    step('step 3', function() {
+      return new Promise(function(resolve, reject) {
+        setTimeout(resolve, 50);
+      });
+    });
+
   });
 
 });
