@@ -14,6 +14,11 @@ describe('it()', function() {
     it('step 3', function() {
     });
 
+    describe('sub-suite', function() {
+        it('step 4', function() {
+        });
+    });
+
   });
 
   describe('async (callback)', function() {
@@ -32,6 +37,12 @@ describe('it()', function() {
       setTimeout(done, 50);
     });
 
+    describe('sub-suite', function() {
+        it('step 4', function(done) {
+          setTimeout(done, 50);
+        });
+    });
+
   });
 
   describe('async (exception)', function() {
@@ -46,6 +57,12 @@ describe('it()', function() {
 
     it('step 3', function(done) {
       setTimeout(done, 50);
+    });
+
+    describe('sub-suite', function() {
+        it('step 4', function(done) {
+          setTimeout(done, 50);
+        });
     });
 
   });
@@ -64,6 +81,12 @@ describe('it()', function() {
 
     it('step 3', function(done) {
       setTimeout(done, 50);
+    });
+
+    describe('sub-suite', function() {
+        it('step 4', function(done) {
+          setTimeout(done, 50);
+        });
     });
 
   });
@@ -86,6 +109,12 @@ describe('it()', function() {
 
     it('step 3', function(done) {
       setTimeout(done, 200);
+    });
+
+    describe('sub-suite', function() {
+        it('step 4', function(done) {
+          setTimeout(done, 50);
+        });
     });
 
   });
@@ -117,6 +146,14 @@ describe('it()', function() {
       return new Promise(function(resolve, reject) {
         setTimeout(resolve, 50);
       });
+    });
+
+    describe('sub-suite', function() {
+        it('step 4', function() {
+          return new Promise(function(resolve, reject) {
+            setTimeout(resolve, 50);
+          });
+        });
     });
 
   });
