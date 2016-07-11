@@ -1,6 +1,6 @@
 {
   "name": "mocha-steps",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Sequential scenarios for Mocha",
   "author": "Romain Prieto",
   "keywords": [
