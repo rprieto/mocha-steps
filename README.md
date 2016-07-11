@@ -2,11 +2,22 @@
 
 > Sequential scenarios for Mocha
 
+[![NPM](http://img.shields.io/npm/v/mocha-steps.svg?style=flat-square)](https://npmjs.org/package/mocha-steps)
+[![License](http://img.shields.io/npm/l/mocha-steps.svg?style=flat-square)](https://github.com/TabDigital/mocha-steps)
+
+[![Build Status](http://img.shields.io/travis/rprieto/mocha-steps.svg?style=flat-square)](http://travis-ci.org/rprieto/mocha-steps)
+
+[![Dependencies](http://img.shields.io/david/rprieto/mocha-steps.svg?style=flat-square)](https://david-dm.org/rprieto/mocha-steps)
+[![Dev dependencies](http://img.shields.io/david/dev/rprieto/mocha-steps.svg?style=flat-square)](https://david-dm.org/rprieto/mocha-steps)
+
+
 Global `step()` function, as a drop-in replacement for `it()`. Any failing `step` will abort the parent `describe` immediately. This is handy for BDD-like scenarios, or smoke tests that need to run through specific steps.
 
 ### Setup
 
-[![NPM](https://nodei.co/npm/mocha-steps.png?compact=true)](https://nodei.co/npm/mocha-steps/)
+```bash
+npm install mocha-steps --save-dev
+```
 
 Then simply run mocha with `--require mocha-steps`.
 
