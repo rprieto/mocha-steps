@@ -1,0 +1,12 @@
+1..8
+ok 1 promises it() A
+not ok 2 promises it() B
+ok 3 promises it() C
+ok 4 promises it() sub-suite D
+ok 5 promises step() A
+not ok 6 promises step() B
+ok 7 promises step() C # SKIP -
+ok 8 promises step() sub-suite D # SKIP -
+# tests 6
+# pass 4
+# fail 2

@@ -1,0 +1,8 @@
+1..4
+ok 1 ignored it() is not executed # SKIP -
+ok 2 ignored it() is not executed # SKIP -
+ok 3 ignored step() is not executed # SKIP -
+ok 4 ignored step() is not executed # SKIP -
+# tests 0
+# pass 0
+# fail 0
