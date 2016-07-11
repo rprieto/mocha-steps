@@ -1,0 +1,12 @@
+1..8
+ok 1 events it() A
+not ok 2 events it() B
+ok 3 events it() C
+ok 4 events it() sub-suite D
+ok 5 events step() A
+not ok 6 events step() B
+ok 7 events step() C # SKIP -
+ok 8 events step() sub-suite D # SKIP -
+# tests 6
+# pass 4
+# fail 2

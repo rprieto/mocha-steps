@@ -1,0 +1,12 @@
+1..8
+ok 1 synchronous it() A
+not ok 2 synchronous it() B
+ok 3 synchronous it() C
+ok 4 synchronous it() sub-suite D
+ok 5 synchronous step() A
+not ok 6 synchronous step() B
+ok 7 synchronous step() C # SKIP -
+ok 8 synchronous step() sub-suite D # SKIP -
+# tests 6
+# pass 4
+# fail 2

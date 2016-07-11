@@ -1,0 +1,12 @@
+1..8
+ok 1 async callback it() A
+not ok 2 async callback it() B
+ok 3 async callback it() C
+ok 4 async callback it() sub-suite D
+ok 5 async callback step() A
+not ok 6 async callback step() B
+ok 7 async callback step() C # SKIP -
+ok 8 async callback step() sub-suite D # SKIP -
+# tests 6
+# pass 4
+# fail 2

@@ -24,7 +24,7 @@ describe('my smoke test', function() {
 
   step('check my balance', function() {
   });
-  
+
   xstep('temporarily ignored', function() {
   });
 
@@ -38,6 +38,7 @@ my smoke test
    ✓ login
    ✗ buy an item
    ✓ check my balance
+   - temporarily ignored
 ```
 
 - Using step()
@@ -46,9 +47,13 @@ my smoke test
 my smoke test
    ✓ login
    ✗ buy an item
+   - check my balance
+   - temporarily ignored
 ```
 
 ### Notes
 
 - Unlike Mocha's `--bail` option, the rest of the test suite will run normally.
-- `step()` works with synchronous, async, and promise tests.
+- `step()` works with synchronous, async, event-based and promise tests.
+
+When submitting a PR, please run `./test.sh` and implement new test cases if required.
