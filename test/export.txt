@@ -1,0 +1,8 @@
+1..4
+ok 1 export it() is executed
+ok 2 export it() is not executed # SKIP -
+ok 3 export step() is executed
+ok 4 export step() is not executed # SKIP -
+# tests 2
+# pass 2
+# fail 0
