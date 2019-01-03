@@ -1,0 +1,6 @@
+1..2
+ok 1 ts-definitions step
+ok 2 ts-definitions xstep # SKIP -
+# tests 1
+# pass 1
+# fail 0
