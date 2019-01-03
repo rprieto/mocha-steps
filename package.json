@@ -1,6 +1,6 @@
 {
   "name": "mocha-steps",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Sequential scenarios for Mocha",
   "author": "Romain Prieto",
   "keywords": [
@@ -24,6 +24,11 @@
     "url": "https://github.com/rprieto/mocha-steps/issues"
   },
   "devDependencies": {
-    "mocha": "^2.3.4"
-  }
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.18",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  },
+  "types": "lib/mocha-steps.d.ts"
 }
