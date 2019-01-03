@@ -30,5 +30,5 @@
     "ts-node": "^7.0.1",
     "typescript": "^3.2.2"
   },
-  "types": "lib/step.d.ts"
+  "types": "lib/mocha-steps.d.ts"
 }
