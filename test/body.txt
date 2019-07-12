@@ -1,0 +1,8 @@
+1..4
+ok 1 body it() synchronous
+ok 2 body it() async
+ok 3 body step() synchronous
+ok 4 body step() async
+# tests 4
+# pass 4
+# fail 0
