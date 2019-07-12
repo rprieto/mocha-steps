@@ -1,0 +1,10 @@
+1..6
+not ok 1 timeouts should fail subsequent steps it() A
+ok 2 timeouts should fail subsequent steps it() B
+ok 3 timeouts should fail subsequent steps it() sub-suite C
+not ok 4 timeouts should fail subsequent steps step() A
+ok 5 timeouts should fail subsequent steps step() B # SKIP -
+ok 6 timeouts should fail subsequent steps step() sub-suite C # SKIP -
+# tests 4
+# pass 2
+# fail 2

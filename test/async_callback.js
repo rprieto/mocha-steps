@@ -19,9 +19,9 @@ describe('async callback', function() {
     });
 
     describe('sub-suite', function() {
-        it('D', function(done) {
-          setTimeout(done, 50);
-        });
+      it('D', function(done) {
+        setTimeout(done, 50);
+      });
     });
 
   });
@@ -43,9 +43,9 @@ describe('async callback', function() {
     });
 
     describe('sub-suite', function() {
-        step('D', function(done) {
-          setTimeout(done, 50);
-        });
+      step('D', function(done) {
+        setTimeout(done, 50);
+      });
     });
 
   });

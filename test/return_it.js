@@ -11,7 +11,7 @@ describe('return it()', function() {
   describe('it()', () => {
 
     it('should timeout', function() {
-      return wait(10); 
+      return wait(10);
     }).timeout(5);
 
     it('should succeed', function() {
@@ -23,10 +23,10 @@ describe('return it()', function() {
   describe('step()', () => {
 
     step('should timeout', function() {
-      return wait(10); 
+      return wait(10);
     }).timeout(5);
 
-    step('should succeed', function() {
+    step('should be skipped', function() {
       return wait(5);
     }).timeout(10);
 

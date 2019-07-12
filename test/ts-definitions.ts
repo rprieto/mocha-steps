@@ -9,4 +9,5 @@ describe('ts-definitions', () => {
   xstep('xstep', () => {
     throw new Error("Should be ignored")
   });
+
 });

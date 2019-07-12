@@ -2,7 +2,7 @@
 not ok 1 return it() it() should timeout
 ok 2 return it() it() should succeed
 not ok 3 return it() step() should timeout
-ok 4 return it() step() should succeed
-# tests 4
-# pass 2
+ok 4 return it() step() should be skipped # SKIP -
+# tests 3
+# pass 1
 # fail 2

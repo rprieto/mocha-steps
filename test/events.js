@@ -52,9 +52,9 @@ describe('events', function() {
     });
 
     describe('sub-suite', function() {
-        step('D', function(done) {
-          setTimeout(done, 50);
-        });
+      step('D', function(done) {
+        setTimeout(done, 50);
+      });
     });
 
   });
